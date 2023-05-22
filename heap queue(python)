@@ -1,0 +1,17 @@
+for using it,heapq module is used.
+
+the property of this data structure in Python is that each time the smallest heap element is popped(min-heap). 
+whenever elements are pushed or popped, heap structure is maintained.
+
+the first element is the smallest element in heap queue.
+
+The heapify(iterable):- This function is used to convert the iterable into a heap data structure. i.e. in heap order.
+
+
+
+heappush- to add elements
+heappop- to remove elements
+heappushpop- to add and remove elements simultaneously
+heapreplace- to add and remove elements simultaneously,but it will pop thr element first then push.
+nlargest- to find the largest element in the iterable.
+nsmallest- to find the smallest element in the iterable.
