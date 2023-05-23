@@ -1,0 +1,48 @@
+There are 5 ways to separate digits of an integer in python:
+
+
+Method 1: Use str() and int() Function in List Comprehension
+
+number = 56712
+digits = [int(i) for i in str(number)
+print(number)
+
+
+Method 2: Use str() Function With map()
+
+number = 56712
+digits = list(map(int,str(number)))
+print(digits)
+
+
+Method 3: Use Simple for Loop
+
+number = 56712
+string=str(number)
+array=[]
+for items in string:
+  array.append(int(items))
+print(array)
+
+
+Method 4: Use math.ceil() With math.log() Function
+
+import maths
+number=56712
+i=math.log(number,10)
+j=math.ceil(i)
+k=[integer//(10**i))%10 for i in range(j-1,-1,-1)]
+print(k)
+
+
+Method 5: Use divmod() Function
+
+number=56712
+array=[]
+while number>0:
+  number,remainder=divmod(number,10)
+  array.append(remainder)
+print(array)
+
+
+
