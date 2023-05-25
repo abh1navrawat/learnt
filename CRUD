@@ -1,0 +1,20 @@
+CRUD is a acronym for Create, Read, Update, Delete.
+CRUD is neccesary for implementation of a persistant storage application
+persistent storage device means any device that retains power when the device is powered off(hard disc)
+
+
+     CREATE
+The create function allows users to create a new record(row) in the database.
+It does not allow to create a new attribute(column).
+
+
+     READ
+It is used to find specific records in database
+
+
+     UPDATE
+It is used to modify existing records.
+
+
+     DELETE
+It is used to remove records from the database
