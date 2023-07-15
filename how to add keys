@@ -1,0 +1,9 @@
+Adding keys to a dictionary from an Array
+
+
+dic={}
+for val in array:
+  if val not in dic:
+    dic[val]=1
+  else:
+    dic[val]+=1
