@@ -5,7 +5,7 @@ Method 1: Use str() and int() Function in List Comprehension
 
 number = 56712
 digits = [int(i) for i in str(number)]
-print(number)
+print(string)
 
 
 Method 2: Use str() Function With map()
