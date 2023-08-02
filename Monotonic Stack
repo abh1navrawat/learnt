@@ -53,5 +53,3 @@ N = len(arr)
 
 # Function Call
 increasingStack(arr,N)
-
-# This code is contributed by Pushpesh Raj.
