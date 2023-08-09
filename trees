@@ -1,0 +1,15 @@
+A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.
+Tree are needed because all other data structures are linear. Operation on linear data structure take more time. So to reduce the time complexity the 
+trees are used.
+Node - A node is an entity that contains a key or value and pointers to its child nodes.
+       last node of each path is called external node
+       a node with a child node is called internal node
+Edge - It is the link between any two nodes.
+Root - the first node(topmost).
+Degree of a node - The degree of a node is the total number of branches of that node.
+
+Type of trees- 
+  Binary Tree
+  Binary Search Tree
+  AVL Tree
+  B-Tree
