@@ -6,3 +6,24 @@ Instance initializer block - used to initialize the instance data member. It run
 
 Final (keyword) - restrict the user fron overriding/manipulating variable,classes, methods (instance of a class).
         
+runtime polymorphism -  a process in which a call to an overridden method is resolved at runtime rather than compile-time(use upcasting).
+
+
+upcasting - If the reference variable of Parent class refers to the object of Child class
+example of upcasting - 
+class Bike{  
+  void run(){System.out.println("running");}  
+}  
+class Splendor extends Bike{  
+  void run(){System.out.println("running safely with 60km");}  
+  
+  public static void main(String args[]){  
+    Bike b = new Splendor();//upcasting  
+    b.run();  
+  }  
+} 
+
+
+Binding - connecting the method call to method body(types of binding - static binding and dynamic binding)
+        static binding - when type of object is determined at compile time
+        dynamic binding - when type of object is determined at runtime 
