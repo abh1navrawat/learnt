@@ -11,6 +11,7 @@ runtime polymorphism -  a process in which a call to an overridden method is res
 
 upcasting - If the reference variable of Parent class refers to the object of Child class
 example of upcasting - 
+
 class Bike{  
   void run(){System.out.println("running");}  
 }  
@@ -23,7 +24,18 @@ class Splendor extends Bike{
   }  
 } 
 
+downcasting - When Subclass type refers to the object of Parent class. Cant be performed directly(compilation error).If we use typecasting it will compile but ClassCastException is thrown at runtime.But downcasting is possible with instanceof operator.
 
 Binding - connecting the method call to method body(types of binding - static binding and dynamic binding)
         static binding - when type of object is determined at compile time
         dynamic binding - when type of object is determined at runtime 
+
+instanceof(keyword) - used to test whether the object is an instance of the specified type.
+example of instanceof
+
+class Simple1{  
+ public static void main(String args[]){  
+ Simple1 s=new Simple1();  
+ System.out.println(s instanceof Simple1);//true  
+ }  
+}  
