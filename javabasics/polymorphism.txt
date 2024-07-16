@@ -39,3 +39,12 @@ class Simple1{
  System.out.println(s instanceof Simple1);//true  
  }  
 }  
+
+Abstraction - Hiding internal details,only howing usage to the user. There are two ways to achieve abstraction -1)Abstract class   2)interface
+
+Abstract keyword is used to declare abstract class. ex - abstract class A{}
+It can proveide from 0 to 100 abstaction depending on our need.
+
+interface is implemented by using interface keyword .ex - interface <interface_name>. 
+interface provide total abstraction( means all the methods in an interface are declared with the empty body, and all the fields are public, static and final by default)
+A class that implement a interface must declare all the method declared in an interface.
