@@ -1,0 +1,11 @@
+package - is a set of classes, interfaces, and sub-packages that are similar.package keyword is used to create a package.
+2 types of packages - User defined and built in package.
+
+subpackage - Package inside the package.Created to categorize the package further. It should be created to categorize the package further.
+
+Access Modifier - specifies the accessibility or scope of a field, method, constructor, or class.
+                  4 types of access modifiers are -
+                  Default - The access level is only within the class.
+                  private - The access level is only within the package.
+                  protected - The access level is within the package and outside the package through child class.
+                  public - The access level  is everywhere.
