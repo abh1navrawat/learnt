@@ -1,0 +1,3 @@
+@bean - Annotation to to indicate that a method instantiates, configures and initializes a new object to be managed by the Spring IoC container.
+
+IoC Containor - Inversion of Control container is a Spring Framework 
