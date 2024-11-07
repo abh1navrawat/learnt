@@ -1,0 +1,7 @@
+@Component -  annotation that allows Spring to detect our custom beans automatically.
+
+
+@bean - Annotation to to indicate that a method instantiates, configures and initializes a new object to be managed by the Spring IoC container.
+
+
+@Autowired - It allows Spring to resolve and inject collaborating beans into our bean.
