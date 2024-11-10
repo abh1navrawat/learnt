@@ -1,4 +1,4 @@
-@Component -  annotation that allows Spring to detect our custom beans automatically.
+@Component -  annotation that allows Spring to detect our custom beans automatically.(convert a class, so that it can be used for objects).getBean method is used to call the object
 
 
 @bean - Annotation to to indicate that a method instantiates, configures and initializes a new object to be managed by the Spring IoC container.
