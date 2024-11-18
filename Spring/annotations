@@ -4,4 +4,7 @@
 @bean - Annotation to to indicate that a method instantiates, configures and initializes a new object to be managed by the Spring IoC container.
 
 
-@Autowired - It allows Spring to resolve and inject collaborating beans into our bean.
+@Autowired - It allows Spring to resolve and inject collaborating beans into our bean. Enable dependency injection in java classes.  It allows Spring to automatically inject dependencies into the class,
+             eliminating the need for manual configuration. Will search for that object in that spring container, It searches for the type not the name 
+
+@Qualifier - seaching the object through name, same working as autowired.
