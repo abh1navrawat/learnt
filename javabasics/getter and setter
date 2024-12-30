@@ -1,0 +1,26 @@
+Private variables can be accessed from outside the class by using get and set method 
+
+get is used to call the variable value
+set is used to set the value of the variable
+
+Syntax -
+
+  get - start with 'get' followed by the name of the variable, with the first letter in upper case
+  set - start with 'set' followed by the name of the variable, with the first letter in upper case
+
+Example - 
+
+
+public class Person {
+  private String name; // private = restricted access
+
+  // Getter
+  public String getName() {
+    return name;
+  }
+
+  // Setter
+  public void setName(String newName) {
+    this.name = newName;
+  }
+}
