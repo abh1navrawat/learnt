@@ -21,3 +21,6 @@ Spring Bean are java objects that are managed by Spring Container
 
 The Spring container is responsible for instantiating, configuring, and assembling the Spring beans.
 
+------------------------Entity-------------------------
+
+an entity represents a table in a relational database and each instance of an entity corresponds to a row in that table.
