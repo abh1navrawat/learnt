@@ -1,0 +1,5 @@
+1) what miniprojects you created during internship?
+2) what libraries did u used?
+3) java/spring/springboot fundamentals
+4) Traversal algo(dfs, bfs) and search algo (binary, linear) and sort algo (merge)
+5) Array, DP, Hashmap, String, 2 pointer, Binary Search.
