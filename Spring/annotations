@@ -8,3 +8,15 @@
              eliminating the need for manual configuration. Will search for that object in that spring container, It searches for the type not the name 
 
 @Qualifier - seaching the object through name, same working as autowired.
+
+@AutoConfiguration : This annotation automatically configuring beans in the class path and automatically scans the dependencies according to the application need.
+
+@ComponentScan : This annotation scans the components (@Component, @Service, etc.) in the package of annotated class and its sub-packages.
+
+@Configuration : This annotation configures the beans and packages in the class path.
+
+@SpringBootApplication - annotation combines @Configuration, @EnableAutoConfiguration, and @ComponentScan annotations. @SpringBootApplication automatically configures the application
+                         based on the dependencies added during project creation and bootstraps the application by using run() method inside the main class of an application.
+
+@RequestMapping : This annotation is used to map HTTP requests to a specific method in a controller. It can be applied at the class level to define a base URL for all methods in the class,
+                 or at the method level to specify a specific URL mapping.
