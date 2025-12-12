@@ -24,3 +24,9 @@ The Spring container is responsible for instantiating, configuring, and assembli
 ------------------------Entity-------------------------
 
 an entity represents a table in a relational database and each instance of an entity corresponds to a row in that table.
+
+------------------------Eureka Server-------------------------
+
+is a registery and discovery server(a phonebook) that holds are a real time map of all the service instances. SO they can communicate with each other dynamically without being hardcoded.
+Services register themselves upon startup and deregister themselves when being shutted down.
+Eureka dashboard at which services are running       URL: http://localhost:8761
