@@ -1,0 +1,56 @@
+SAP stands for System, Application and products( for data processing). It is a multinational german company. SAP/4 HANA is also the product for ERP (enterprise resouce planning) products.
+
+SAP product can be divided in three layers - Presentation layer(users see this), Application layer( coding is one here) and Database Layer (data is stored here).
+
+ABAP stands for Advanced business application programming.
+It is the language used in backend of SAP products.
+
+FIORI is the frontend language
+the word originated from italian language meaning flowers
+
+HANA is the database.
+S/4HANA is the combination of HANA,  SAP's modern business software suite and the Fiori interface.
+
+In S/4HANA we can perform calculations inside the database itself.
+In previous version(SAP ECC) we need to go to the ABAP(Application alyer for the calculation) but in the S/4HANA calcution can be done inside database itself.
+
+uses ABAP SQL to write SQL queries
+
+
+
+ABAP is object oriented, that means it supports all the pillars of OOPS (Abstration, polymorphism, Inheritance, Encapsulation).
+
+SAP GUI is used old text editor (new one is ADT(build on top of eclipse)).
+
+In SAP GUI u can access different files either by using project manager(like eclipse or enter T-code(top right).
+
+there are different T-codes to execute different tasks. SOme inportant ones are- 
+se11 - ddic
+se24 - global class crud
+se37 - function builder(similar to program but it can take input(pass by valur,pass by reference) first line will be FUNCTION keyord then name
+se38 - program builder(report, program)( report ask for additional info through selection screen whereas program doesnt require any additional info)
+se80 - Object creation
+
+
+Comment in ABAP-
+
+if u want to make whole line as comment use *
+if u want to make the text after abap statement as comment(in line comment) use "
+
+SAmPle CODING - 
+
+REPORT ZHELLO
+WRITE HI. " output will be HI
+
+REPORT ZHELL
+DATA : internal_table TYPE TABLE OF spfli,                 (flight db table available in SE11) -write this to create a internal table with structure(columns only ) of SPLFI
+       work_area LIKE LINE OF  intb.                       (work area indicate the row of internal table
+       SELECT * FROM splfi INTO TALBE internal_table.      (inserting whole splfi talbe into internal table, generally WHERE  clause in used to make the time complexity of query better)
+       LOOP AT internal_table INTO work_area.              (LOOP keyword is used to perform looping and the work_area will take one line from internal_talbe and perform operation over it)
+          IF work_area-destination = 'DEL'.                (IF statement to write a condition to check whether the current row(work_area) destination column has DEL(delhi) in it
+          WRTIE : work_area-connid, work_area-carrid.      (WRITE keyword will display the connection id and carrier id)
+          ENDIF.                                           (need to end both condtional statement(IF) and loop)
+          ENDLOOP.
+
+
+          
