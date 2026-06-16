@@ -37,6 +37,15 @@ Comment in ABAP-
 if u want to make whole line as comment use *
 if u want to make the text after abap statement as comment(in line comment) use "
 
+
+Internal tables -
+
+are dynamic, in-memory data structures used to hold, process, and manipulate datasets with a fixed structure while a program is running.
+They function like arrays, allowing developers to handle large volumes of data temporarily before writing to the database or displaying it in a report
+
+3 types- standard,sorted,hashed(key based).
+
+
 SAmPle CODING - 
 
 REPORT ZHELLO
@@ -53,4 +62,25 @@ DATA : internal_table TYPE TABLE OF spfli,                 (flight db table avai
           ENDLOOP.
 
 
-          
+
+Code pushdown (also known as code-to-data) - is a software development paradigm—primarily used in SAP ABAP for HANA—where data-intensive calculations and logic are moved
+from the application server layer down to the database layer. This leverages the database's parallel processing and in-memory capabilities to significantly speed up application performance.
+
+means directly executing operations on database layer and bring only the data that matches the condition. If we dont do this, then the Application layer bring the whole table from db and perform operation there
+that is significantly slower. heavy operations such as aggregation, joins, filtering.
+
+4 main methods to do code pushdown- 
+
+Advanced SQL queries                  - Writing enhanced SQL queries with aggregations, grouping, and joining directly in the application code.
+Core data services(CDS)               - Reusable, semantic data models defined on the database server that push logic down natively.
+ABAP managed database procedure(AMDP) - Writing complex business logic and calculations directly in database languages (like SQLScript) inside ABAP classes.
+HANA Information models               -  Using graphical or scripted calculation views.
+
+
+
+CDS  -  Stand for Core data services.
+        Is a framework that let user create data models at database level.
+        By pushing data processing logic from the application server down to the database, CDS significantly optimizes performance.
+        Also helps with code pushdown
+
+CDS View -  by using CDS(framework) we create CDS view(object).
