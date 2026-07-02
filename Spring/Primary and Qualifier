@@ -1,0 +1,33 @@
+In Spring Boot, @Primary sets a default bean to be injected when multiple beans of the same type exist,
+while @Qualifier explicitly names the exact bean you want to inject at a specific injection point.
+
+When both are used together, @Qualifier always overrides @Primary.
+
+Without either annotation, having multiple beans of the same type causes Spring to throw a NoUniqueBeanDefinitionException.
+
+
+sample code -
+
+using primary 
+
+
+@Component
+@Primary // Sets this class as the default choice
+public class EmailService implements NotificationService {
+    public void send(String message) { System.out.println("Email: " + message); }
+}
+
+@Component
+public class SmsService implements NotificationService {
+    public void send(String message) { System.out.println("SMS: " + message); }
+}
+
+
+qualtifier 
+
+@RestController
+public class SpecificController {
+    @Autowired
+    @Qualifier("smsService") // Explicitly targets the SMS bean by its name
+    private NotificationService service; // Injects SmsService
+}
