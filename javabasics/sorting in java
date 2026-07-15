@@ -1,0 +1,50 @@
+To sort standard arrays in Java, use the built-in Arrays.sort() utility method from the java.util.Arrays package.
+LeetCode automatically imports this package for you.
+
+1. Primitive Arrays (Ascending Order)
+For int[], char[], or double[], pass the array directly into the method.
+
+It sorts the array in place (mutates the original array).
+
+int[] nums = {5, 2, 9, 1, 3};
+Arrays.sort(nums); 
+// nums is now [1, 2, 3, 5, 9]
+Time Complexity: O(N log N) using Dual-Pivot Quicksort.
+Space Complexity: O(log N).
+
+2. Primitive Arrays (Descending Order)Java does not support sorting primitive arrays in descending order directly via a built-in reverse comparator.
+
+You have two choices:
+Option A: Sort in ascending order, then manually reverse the array using a two-pointer loop. (Recommended for performance and memory).
+Option B: Box the primitives into object wrappers (Integer[]), then use a custom comparator. Option B syntax:
+
+Integer[] nums = {5, 2, 9, 1, 3};
+Arrays.sort(nums, Collections.reverseOrder());
+
+
+3. Object Arrays (Custom Sorting)For object arrays like String[] or Integer[], you can pass a lambda expression as a custom comparator.
+
+String[] words = {"banana", "apple", "cherry"};
+// Sort alphabetically
+Arrays.sort(words); 
+
+// Sort by string length
+Arrays.sort(words, (a, b) -> Integer.compare(a.length(), b.length()));
+
+4. 2D Arrays / MatricesLeetCode often requires sorting 2D intervals or coordinates (e.g., int[][] intervals). You must provide a comparator to tell Java which column to sort by.
+
+int[][] intervals = {{1, 4}, {3, 6}, {2, 8}};
+
+// Sort rows based on the starting element (index 0 of each row)
+Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+// intervals is now {{1, 4}, {2, 8}, {3, 6}}
+
+Note: Always use Integer.compare(a[0], b[0]) instead of a[0] - b[0] to prevent integer overflow errors on edge-case LeetCode inputs.
+
+5. Sorting a Portion of an ArrayIf you only need to sort a specific range, pass the starting index (inclusive) and ending index (exclusive).
+
+int[] nums = {9, 8, 7, 1, 2, 3};
+Arrays.sort(nums, 0, 3); 
+// Only index 0, 1, and 2 are sorted. nums is now [7, 8, 9, 1, 2, 3]
+
+
